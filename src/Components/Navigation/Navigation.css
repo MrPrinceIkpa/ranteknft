@@ -1,0 +1,117 @@
+#navConMobile {
+    display: none;
+}
+#navContainer {
+    display: block;
+    width: 60%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin: 25px auto 25px auto;
+}
+#navTextContainer {
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#navButton {
+    width: 100%;
+    padding: 0.9em;
+    background-color: #494949;
+    color: white;
+    cursor: pointer;
+}
+#navButton:hover {
+    background-color: #CC9410;
+}
+.navText {
+    color: #CC9410;
+    text-decoration: none;
+    user-select: none;
+    box-shadow: none;
+}
+.navText:hover {
+    color: white;
+}
+@media screen and (max-width:975px) {
+    .navText:hover {
+        color: #CC9410;
+    }
+    #navContainer {
+        display: none;
+    }
+    #mobControl {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    #navConMobile {
+        display: block;
+    }
+    #mobcontrol1 {
+        min-width: 40%;
+    }
+    #mobcontrol2 img{
+        width: 100%;
+        height: auto;
+    }
+    #mobilenavButton {
+        padding: 0.9em;
+        background-color: #494949;
+        color: white;
+        cursor: pointer;
+    }
+    #mobMenu {
+        background-color: white;
+        width: 70vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        z-index: 7000;
+        display: none;
+        place-items: center;
+    }
+    .moblist {
+        color: black;
+        font-size: 1.4em;
+    }
+    #moblistCon {
+        display: flex;
+        flex-direction: column;
+        row-gap: 3vh;
+
+    }
+    #mobcontrol2 {
+        width: 11%;
+    }
+    .burgersvg{
+        display: block;
+        transition: all 0.3s ease-in;
+        opacity: 1;
+        transform: translateZ(0deg);
+    }
+    .zeroDisp {
+        opacity: 0;
+        transform: rotateZ(90deg);
+    }
+    .closesvg {
+        position: fixed;
+        user-select: none;
+        opacity: 0;
+        transition: all 0.6s ease-in;
+        transform: rotateZ(360deg);
+    }
+    .showClose {
+        opacity: 1;
+        transform: rotateZ(0deg);
+    }
+}

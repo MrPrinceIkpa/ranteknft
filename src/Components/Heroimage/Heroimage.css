@@ -1,0 +1,82 @@
+#gallery{
+    width: 100%;
+    margin: 5px auto 0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "nft1 nft2"
+        "nft3 nft3"
+    ;
+}
+
+#pic1 {
+    grid-area: nft1;
+}
+#pic1 .nftCon .nftImg {
+    transform: rotateZ(0deg);
+    transition: all 1s ease-out;
+    position: relative;
+    left: 15px;
+}
+#pic1 .nftCon .position2 {
+    transform: rotateZ(11deg);
+}
+#pic2 {
+    grid-area: nft2;
+}
+#pic2 .nftCon .nftImg {
+    transform: rotateZ(-80deg);
+    position: relative;
+    top: 70px;
+    right: 20px;
+    transition: all 0.9s ease-in-out;
+    z-index: 2000;
+}
+#pic2 .nftCon .position22 {
+    transform: rotateZ(-8deg);
+    position: relative;
+    top: 70px;
+    right: 20px;
+    z-index: 2000;
+}
+#pic3 {
+    grid-area: nft3;
+}
+#pic3 .nftCon {
+    width: 50%;
+    margin: auto;
+}
+#pic3 .nftCon .nftImg {
+    position: relative;
+    top: -10px;
+    transition: all 0.4s ease-in-out;
+}
+#pic3 .nftCon .position222 {
+    position: relative;
+    top: -50px;
+}
+@media screen and (max-width:975px) {
+    #pic1 .nftCon .nftImg {
+        transition: all 1.3s ease-out;
+    }
+    #pic2 .nftCon .nftImg {
+        transition: all 1.2s ease-in-out;
+    }
+    #pic3 .nftCon .nftImg {
+        transition: all 1.0s ease-in-out;
+    }
+    #pic1 {
+        grid-area: nft1;
+    }
+    #pic1 .nftCon .nftImg {
+        transform: rotateZ(11deg);
+        position: relative;
+        left: 15px;
+    }
+    #gallery{
+        width: 95%;
+        margin: 5px auto 0 auto;
+    }
+    
+}
